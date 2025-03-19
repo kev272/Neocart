@@ -137,11 +137,11 @@ def login_view(request):
             # login(request, user)
             login(request,user)
             messages.success(request, "You are now logged in!")
-            return redirect('index.html')
+            return redirect('/home')
         else:
             messages.error(request, "Invalid login credentials")
 
-    return render(request, 'index.html')
+    return render(request, 'login.html')
 def show(request):
     #to fetch info stored in models and display them
     all = Pricing.objects.all() #appointment is the name of the model

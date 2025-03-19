@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 {% load static %}
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="icon">
   <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -61,7 +61,7 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Impact</h1>
+          <h1 class="sitename">Neocart</h1>
           <span>.</span>
         </a>
 
@@ -72,7 +72,7 @@
             <li><a href="{% url 'service' %}">Services</a></li>
             <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
             <li><a href="{% url 'team' %}">Team</a></li>
-            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'blog' %}">place an order</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
@@ -109,8 +109,8 @@
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5 justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2><span>Welcome to </span><span class="accent">Impact</span></h2>
-            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+            <h2><span>Welcome to </span><span class="accent">Neocart</span></h2>
+            <p>Discover fashion that meets your lifestyle</p>
             <div class="d-flex">
               <a href="{% url 'about' %}" class="btn-get-started">Get Started</a>
               <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -128,29 +128,29 @@
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-easel"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                <div class="icon"><i class="bi bi-scissors"></i></div>
+                <h4 class="title"><a href="{% url 'service' %}" class="stretched-link">Services</a></h4>
               </div>
             </div><!--End Icon Box -->
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-gem"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
+                <h4 class="title"><a href="{% url 'portfolio' %}" class="stretched-link">Products</a></h4>
               </div>
             </div><!--End Icon Box -->
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
+                <h4 class="title"><a href="{% url 'contact' %}" class="stretched-link">Location</a></h4>
               </div>
             </div><!--End Icon Box -->
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-command"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
+                <h4 class="title"><a href="{% url 'team' %}" class="stretched-link">Team</a></h4>
               </div>
             </div><!--End Icon Box -->
 
@@ -290,8 +290,8 @@
           <div class="col-xl-10">
             <div class="text-center">
               <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox play-btn"></a>
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>What do we offer ?</h3>
+              <p>Why not enjoy a video prepared just for your question ?</p>
               <a class="cta-btn" href="#">Call To Action</a>
             </div>
           </div>
@@ -309,7 +309,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Despite having different designs, most products have the same fixed price.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -318,36 +318,34 @@
 
           <div class="col-lg-4">
             <div class="pricing-item">
-              <h3>Free Plan</h3>
+              <h3>Basic</h3>
               <div class="icon">
                 <i class="bi bi-box"></i>
               </div>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h4><sup>$</sup>190<span> </span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span>Lasts upto 6months with regular wear</span></li>
+                <li><i class="bi bi-check"></i> <span>Machine wash,may shrink slightly overtime</span></li>
+                <li><i class="bi bi-check"></i> <span>Lightweight cotton blend</span></li>
+                <li><i class="bi bi-check"></i> <span>Casual,short-term use</span></li>
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="{% url 'pay' %}" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-4">
             <div class="pricing-item featured">
-              <h3>Business Plan</h3>
+              <h3>Premium</h3>
               <div class="icon">
                 <i class="bi bi-rocket"></i>
               </div>
 
-              <h4><sup>$</sup>29<span> / month</span></h4>
+              <h4><sup>$</sup>290<span> </span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span>Retains shape & color for 1-2 years</span></li>
+                <li><i class="bi bi-check"></i> <span>Easy care,minimal shrinkage,holds up well</span></li>
+                <li><i class="bi bi-check"></i> <span>100% soft,breathable cotton</span></li>
+                <li><i class="bi bi-check"></i> <span>Best for everyday ware,better longevity</span></li>
               </ul>
               <div class="text-center"><a href="{% url 'pay' %}" class="buy-btn">Buy Now</a></div>
             </div>
@@ -355,19 +353,18 @@
 
           <div class="col-lg-4">
             <div class="pricing-item">
-              <h3>Developer Plan</h3>
+              <h3>Luxury</h3>
               <div class="icon">
                 <i class="bi bi-send"></i>
               </div>
-              <h4><sup>$</sup>49<span> / month</span></h4>
+              <h4><sup>$</sup>490<span> </span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span>Designed to last 3+ years with proper care</span></li>
+                <li><i class="bi bi-check"></i> <span>Machine washable,wrinkle resist,fade-proof</span></li>
+                <li><i class="bi bi-check"></i> <span>Ultra-soft organic cotton,reinforced stitching</span></li>
+                <li><i class="bi bi-check"></i> <span>Long term use,premium look & feel</span></li>
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="{% url 'pay' %}" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -388,7 +385,7 @@
             <div class="content px-xl-5">
               <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Here are the commonly asked questions concerning our brand that you might closely relate to
               </p>
             </div>
           </div>
@@ -397,157 +394,55 @@
 
             <div class="faq-container">
               <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                <h3><span class="num">1.</span> <span>What payment methods do you accept</span></h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>We accept major credit/debit cards,PayPal,and other secure payment options displayed at checkout    </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                <h3><span class="num">2.</span> <span>How do I care for my clothing</span></h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Each product comes with care instructions.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                <h3><span class="num">3.</span> <span>Do we have a refund policy ?</span></h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>We do have one just for the comfort of our valued customers, but we highly doubt the need due to our confidence in our quality</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
+                <h3><span class="num">4.</span> <span>Do I need an account to place an order?</span></h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>No,you can check out as a guest.However,creating an account allows you to track orders and save your details for faster checkout</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
-              <div class="faq-item">
-                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
 
-            </div>
+
+
 
           </div>
         </div>
 
       </div>
-
     </section><!-- /Faq Section -->
 
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div class="post-img">
-                <img src="{% static 'assets/img/blog/blog-1.jpg' %}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="{% static 'assets/img/blog/blog-author.jpg' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article>
-
-              <div class="post-img">
-                <img src="{% static 'assets/img/blog/blog-2.jpg' %}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="{% static 'assets/img/blog/blog-author-2.jpg' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-
-              <div class="post-img">
-                <img src="{% static 'assets/img/blog/blog-3.jpg' %}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="{% static 'assets/img/blog/blog-author-3.jpg' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
       <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -590,7 +485,7 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <span>At Neocart,we are commited to redefining fashion with quality,sustainability, and innovation.Our goal is to create timeless pieces that empower individuals</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -606,7 +501,7 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>Designing for Neocart means blending creativity with craftsmanship.Every stitch,fabric choice,and silhoette is thoughtfully curated to ensure comfort and elegance for our customers</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -622,7 +517,7 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <span>Partnering with Neocart has been a gamechanger for our boutique.Their collections resonate with our customers and are very stylish</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -638,27 +533,13 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <span>Working with Neocart has been an absolute pleasure.Thair attention to detail,commitment to sustainability make it easy to create stunning content that inpires fashion lovers worldwide</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
+
 
           </div>
           <div class="swiper-pagination"></div>
@@ -679,9 +560,9 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Impact</span>
+            <span class="sitename">Neocart</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>We are more than just a clothing brand-we are a movement.Whether you are here for bold fashion statements of everyday essentials, we've got you covered.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -701,21 +582,12 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
+          <p>157 William St</p>
+          <p>New York, NY 10038</p>
           <p>United States</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
           <p><strong>Email:</strong> <span>info@example.com</span></p>
@@ -725,7 +597,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Impact</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neocart</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
